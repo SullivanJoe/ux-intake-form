@@ -438,7 +438,7 @@ export default function IntakeWizard() {
   if (currentStep === STEP_OPENING) {
     const openingFeedback = feedbacks[STEP_OPENING];
     return (
-      <div className="max-w-2xl mx-auto p-6">
+      <div className="max-w-4xl mx-auto p-6">
         <div className="glass-card p-8 space-y-6 shadow-2xl shadow-slate-900/50">
           <div className="flex items-start justify-between gap-4">
             <h1 className="text-2xl font-bold text-slate-100">Design Intake Assistant</h1>
@@ -518,7 +518,7 @@ export default function IntakeWizard() {
   // —— Steps 1–3: Sections ——
   if (isInSections && section && sectionIntro) {
     return (
-      <div className="max-w-2xl mx-auto p-6">
+      <div className="max-w-4xl mx-auto p-6">
         <div className="mb-6 flex items-start justify-between gap-4">
           <div className="min-w-0">
             <h1 className="text-2xl font-bold text-slate-100">Design Intake Assistant</h1>
@@ -692,7 +692,7 @@ export default function IntakeWizard() {
   // —— Step 4: AI Summary ——
   if (currentStep === STEP_SUMMARY) {
     return (
-      <div className="max-w-2xl mx-auto p-6">
+      <div className="max-w-4xl mx-auto p-6">
         <div className="mb-6 flex items-start justify-between gap-4">
           <h1 className="text-2xl font-bold text-slate-100">Design Request Summary</h1>
           <button type="button" onClick={resetWizard} className="btn-ghost shrink-0">
@@ -754,7 +754,7 @@ export default function IntakeWizard() {
   // —— Step 5: Offer Visual Mockup ——
   if (currentStep === STEP_OFFER_VISUAL) {
     return (
-      <div className="max-w-2xl mx-auto p-6">
+      <div className="max-w-4xl mx-auto p-6">
         <div className="glass-card p-8 space-y-6 shadow-2xl shadow-slate-900/50">
           <h2 className="text-xl font-bold text-slate-100">
             Would you like me to create a quick visual concept to support this request?
@@ -786,7 +786,7 @@ export default function IntakeWizard() {
   // —— Step 6: Visual Concept (generating or shown) ——
   if (currentStep === STEP_VISUAL_CONCEPT) {
     return (
-      <div className="max-w-2xl mx-auto p-6">
+      <div className="max-w-4xl mx-auto p-6">
         <div className="mb-6 flex items-start justify-between gap-4">
           <h1 className="text-2xl font-bold text-slate-100">Reference Concept (Low Fidelity UX Direction)</h1>
           <button type="button" onClick={resetWizard} className="btn-ghost shrink-0">
@@ -866,7 +866,7 @@ export default function IntakeWizard() {
   // —— Step 7: Final (submitted) ——
   if (currentStep === STEP_FINAL) {
     return (
-      <div className="max-w-3xl mx-auto p-6 space-y-8">
+      <div className="max-w-5xl mx-auto p-6 space-y-8">
         <section className="glass-card p-6 shadow-2xl shadow-slate-900/50">
           <h2 className="text-xl font-semibold text-slate-100 mb-2">Thank you</h2>
           <p className="text-slate-400 mb-6">
