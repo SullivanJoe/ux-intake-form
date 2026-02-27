@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-base: 15 23 42;
+  --bg-mid: 30 41 59;
+  --accent-from: 34 211 238;
+  --accent-to: 59 130 246;
+  --glass: rgba(30 41 59 / 0.6);
+  --border-subtle: rgba(71 85 105 / 0.5);
+}
+
+body {
+  color: rgb(226 232 240);
+  background: linear-gradient(
+    135deg,
+    rgb(15 23 42) 0%,
+    rgb(30 41 59) 35%,
+    rgb(51 65 85) 70%,
+    rgb(15 23 42) 100%
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .glass-card {
+    @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl;
+  }
+  .btn-gradient {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-medium
+           hover:from-cyan-400 hover:to-blue-500
+           focus:outline-none focus:ring-2 focus:ring-cyan-400/50 focus:ring-offset-2 focus:ring-offset-slate-900
+           transition-all duration-200;
+  }
+  .btn-ghost {
+    @apply rounded-xl border border-slate-500/60 bg-white/5 px-4 py-2 text-sm font-medium text-slate-300
+           hover:bg-white/10 hover:border-slate-400/60
+           focus:outline-none focus:ring-2 focus:ring-cyan-400/40 focus:ring-offset-2 focus:ring-offset-slate-900
+           transition-all duration-200;
+  }
+}
